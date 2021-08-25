@@ -67,13 +67,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\aluno.png" />
+    <Content Include="Images\banner0.png" />
+    <Content Include="Images\banner1.png" />
+    <Content Include="Images\banner2.png" />
+    <Content Include="Images\banner3.png" />
+    <Content Include="Images\banner4.png" />
+    <Content Include="Images\Competencias.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\globo.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\icon1.png" />
+    <Content Include="Images\icon_faleconosco.png" />
+    <Content Include="Images\icon_website.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\lupa.png" />
+    <Content Include="Images\marca.png" />
+    <Content Include="Images\marca1.png" />
+    <Content Include="Images\menu_mobile.png" />
+    <Content Include="mestra.css" />
+    <Content Include="Images\programador.png" />
+    <Content Include="Images\si1.png" />
+    <Content Include="Images\si2.jpg" />
+    <Content Include="Images\si3.jpg" />
+    <Content Include="Images\si4.jpg" />
+    <Content Include="Images\si5.jpeg" />
+    <Content Include="Sobre.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.aspx.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sobre.aspx.designer.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,6 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
