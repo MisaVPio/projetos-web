@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ProjetoWeb.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- FOLHA DE ESTILO DO PROJETO -->
+	<link href="mestra.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Cabeçalho -->
+        <div class="cabecalho">
+            <!-- LOGOMARCA-->
+            <div class="logomarca">
+				<img src="../Images/marca.png" />
+           
+            </div>
+            <!--  TÍTULO -->
+            <div class="barra-titulo">
+                Segurança da Informação
+            </div>
+            <!-- BARRA DO MENU -->
+            <div class="menu">
+
+            </div>
+
+
+
+
+
+            <asp:HyperLink ID="Home"  runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="Sobre" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
+        </div>
+        <!-- Conteúdo -->
+        <div class="content-wrapper">
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <!-- Rodapé -->
+        <div>
+            RODAPÉ
+        </div>
+    </form>
+</body>
+</html>
+    

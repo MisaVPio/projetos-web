@@ -1,0 +1,68 @@
+﻿/* SEGURANÇA DA INFORMAÇÃO - 2021 - 2º SEMESTER*/
+
+* {
+	-webkit-box-sizing: border-box !important;/*SAFARI/CHROME*/
+	-moz-box-sizing: border-box !important;/*Firefox*/
+	box-sizing: border-box !important;/*IE8 - Opera*/
+}
+body {
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 150%
+}
+
+a {
+	color: #hff6a00;
+	text-decoration:none;
+}
+
+	a:hover {
+		color: #0094ff;
+	}
+
+.content-wrapper {
+	max-width: 1280px;
+	margin: auto;
+}
+
+ ATRIBUIÇÕES ESPECÍFICAS DO PROJETO 
+
+.cabecalho {
+	height: 80px;
+	width: 100%;
+	border-bottom: 1px solid #c0c0c0;
+	position: relative; 
+}
+
+.logomarca {
+	position: relative;
+	top:0px;
+	left:0px;
+	width:80px;
+	height:80px;
+	background-color:green;
+}
+
+.barra-titulo {
+	position:absolute;
+	top:0px;
+	left:80px;
+	right:0px;
+	background-color:aqua;
+	height:40px;
+}
+
+.menu {
+	position: absolute;
+	left: 80px;
+	top:40px;
+	right: 0px;
+	background-color: red;
+	height: 40px;
+}
