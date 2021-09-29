@@ -57,6 +57,23 @@
 						</div>
 
 					</div>
+					<div class="col-3">
+						<div class="box">
+							<asp:HyperLink ID="HyperLink1" NavigateUrl="~/Default.aspx" runat="server">Home</asp:HyperLink>
+							<br />
+							<asp:HyperLink ID="HyperLink2" NavigateUrl="~/Sobre.aspx" runat="server">Sobre</asp:HyperLink>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="box">
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="box">
+							<img src="Images/marca.png" />
+						</div>
+					</div>
 
 				</div>
 			</div>
