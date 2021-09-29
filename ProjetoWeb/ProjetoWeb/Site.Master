@@ -4,50 +4,64 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <!-- FOLHA DE ESTILO DO PROJETO -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<!-- FOLHA DE ESTILO DO PROJETO -->
 	<link href="mestra.css" rel="stylesheet" />
+	<!-- RECURSOS PARA EXIBIR SLIDES -->
+	<link href="Js/flexslider.css" rel="stylesheet" />
+	<script src="Js/jquery-1.7.2.min.js"></script>
+	<script src="Js/flexslider.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <!-- Cabeçalho -->
-        <div class="cabecalho">
-            <!-- LOGOMARCA-->
-            <div class="logomarca">
-				<img src="../Images/marca.png" />
-           
-            </div>
-            <!--  TÍTULO -->
-            <div class="barra-titulo">
-                Segurança da Informação
-            </div>
-            <!-- BARRA DO MENU -->
-            <div class="menu">
+	<form id="form1" runat="server">
+		<div class="content-wrapper">
+			<!-- CABEÇALHO -->
+			<div class="cabecalho">
+				<!-- LOGOMARCA-->
+				<div class="logomarca">
+					<img src="../Images/marca.png" />
+				</div>
+				<!--  TÍTULO -->
+				<div class="barra-titulo">
+					Segurança da Informação
+				</div>
+				<!-- BARRA DO MENU -->
+				<div class="menu">
+					<asp:HyperLink ID="Sobre" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
+					<asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
+					<asp:HyperLink ID="Contato" runat="server" NavigateUrl="~/Contato.aspx">CONTATO</asp:HyperLink>
+				</div>
+			</div>
+			<br />
+		</div>
+		<!-- CONTEÚDO -->
+		<div class="conteudo">
+			<div class="content-wrapper">
+				<asp:ContentPlaceHolder ID="Conteudo" runat="server">
+				</asp:ContentPlaceHolder>
+			</div>
 
-            </div>
+		</div>
+		<!-- RODAPÉ -->
+		<div class="rodape">
+			<div class="content-wrapper ">
+				<div class="row">
+					<div class="col-4">
+						<div class="box">
+							Faculdade de Tecnologia de Americana
+				<br />
+							Curso de Segurança da Informação
+						</div>
 
+					</div>
 
+				</div>
+			</div>
 
-
-
-            <asp:HyperLink ID="Home"  runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
-            <br />
-            <asp:HyperLink ID="Sobre" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
-        </div>
-        <!-- Conteúdo -->
-        <div class="content-wrapper">
-            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
-            </asp:ContentPlaceHolder>
-
-        </div>
-        <!-- Rodapé -->
-        <div>
-            RODAPÉ
-        </div>
-    </form>
+		</div>
+	</form>
 </body>
 </html>
-    

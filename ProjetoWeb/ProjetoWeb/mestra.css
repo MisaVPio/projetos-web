@@ -1,12 +1,16 @@
-﻿/* SEGURANÇA DA INFORMAÇÃO - 2021 - 2º SEMESTER*/
+﻿/* SEGURANÇA DA INFORMAÇÃO 2021-2
+   
+*/
 
+/* PARA RESOLVER O PROBLEMA DA MARGEM INTERNA SER SOMADA AO TAMANHO DO BLOCO */
 * {
-	-webkit-box-sizing: border-box !important;/*SAFARI/CHROME*/
-	-moz-box-sizing: border-box !important;/*Firefox*/
-	box-sizing: border-box !important;/*IE8 - Opera*/
+	-webkit-box-sizing: border-box !important; /*Safari/Chrome */
+	-moz-box-sizing: border-box !important; /*Firefox  */
+	box-sizing: border-box !important; /* IE8+/ Opera */
 }
+
 body {
-	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	margin: 0;
 	line-height: 150%;
@@ -14,12 +18,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	line-height: 150%
+	line-height: 150%;
 }
 
 a {
-	color: #hff6a00;
-	text-decoration:none;
+	color: #ff6a00;
+	text-decoration: none;
 }
 
 	a:hover {
@@ -27,42 +31,210 @@ a {
 	}
 
 .content-wrapper {
-	max-width: 1280px;
+	max-width: 1100px;
 	margin: auto;
 }
 
- ATRIBUIÇÕES ESPECÍFICAS DO PROJETO 
+/**************************************** 
+	RECURSOS PARA LAYOUT EM COLUNAS
+    obtido do pacote BootStrap
+*****************************************/
+/* Linha para criar as colunas */
+.row {
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.col-11 {
+	width: 91.66666666%;
+}
+
+.col-10 {
+	width: 83.3333333%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-8 {
+	width: 66.66666667%;
+}
+
+.col-7 {
+	width: 58.33333333%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-5 {
+	width: 41.66666667%;
+}
+
+.col-4 {
+	width: 33.33333333%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-2 {
+	width: 16.66666667%;
+}
+
+.col-1 {
+	width: 8.33333333%;
+}
+
+.margin-right-20 {
+	margin-right: 20px;
+}
+
+.box {
+	padding: 10px;
+}
+
+.border {
+	border: 1px solid #c0c0c0;
+	border-radius: 4px;
+}
+
+
+/* ATRIBUIÇÕES ESPECÍFICAS DO PROJETO */
 
 .cabecalho {
-	height: 80px;
+	height: 60px;
 	width: 100%;
 	border-bottom: 1px solid #c0c0c0;
-	position: relative; 
+	position: relative; /* para permitir o posicionamento absoluto dos elementos internos */
+}
+
+
+/* CABEÇALHO FIXO */
+.cabecalho-fixo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
 }
 
 .logomarca {
-	position: relative;
-	top:0px;
-	left:0px;
-	width:80px;
-	height:80px;
-	background-color:green;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 60px;
+	height: 60px;
 }
 
+	.logomarca img {
+		height: 56px;
+	}
+
 .barra-titulo {
-	position:absolute;
-	top:0px;
-	left:80px;
-	right:0px;
-	background-color:aqua;
-	height:40px;
+	position: absolute;
+	top: 0px;
+	left: 80px;
+	right: 0px;
+	height: 30px;
+	font-size: 12px;
 }
 
 .menu {
 	position: absolute;
 	left: 80px;
-	top:40px;
+	bottom: 0px;
 	right: 0px;
-	background-color: red;
-	height: 40px;
+	height: 30px;
 }
+
+	.menu a {
+		margin-right: 10px;
+		color: #515151;
+	}
+
+		.menu a:hover {
+			color: black;
+			border-bottom: 3px solid black;
+		}
+
+
+/* MENU ESTILO BOTÃO */
+/*    .menu a {
+        margin-right: 10px;
+        color: #515151;
+        padding: 4px;
+        border: 1px solid transparent;
+    }
+
+        .menu a:hover {
+            color: black;
+            border: 1px solid #808080;
+            border-radius:4px;
+            background-color:#dddddd;
+        }
+*/
+
+.conteudo {
+	min-height: 800px;
+}
+
+.rodape {
+	height: 200px;
+	background-color: #dddddd;
+}
+
+/****************************************
+CONTROLES PARA FORMULÁRIO
+*****************************************/
+label {
+	margin-top: 20px;
+	display: block;
+	max-width: 100%;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	border: 1px solid #d7d7d7;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.8);
+	color: #555;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	resize: none;
+	outline: none;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+	margin-top: 20px;
+	border: 1px solid #c0c0c0;
+	border-radius: 4px;
+	color: white;
+	background-color: #355bc6;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+	input[type="submit"]:hover,
+	input[type="button"]:hover,
+	button:hover {
+		background-color: #293b90;
+		color: white;
+	}
