@@ -44,8 +44,8 @@ namespace ProjetoWeb
 					//2. INSTANCIAR (CRIAR UMA CÓPIA) O OBJETO MAILMESSAGE
 					MailMessage mail = new MailMessage();
 					mail.Subject = "E-mail enviado pela pagina de contato";
-					mail.To.Add("contato@seudominio.com.br");
-					MailAddress remetente = new MailAddress("contato@seudominio.com.br");
+					mail.To.Add("misavpio@outlook.com.br");
+					MailAddress remetente = new MailAddress("misavpio@outlook.com.br");
 					mail.From = remetente;
 					mail.IsBodyHtml = false;
 					mail.Body = "Dados informados\n";
@@ -56,16 +56,22 @@ namespace ProjetoWeb
 					LimparControles();
 					//3. ENVIA O EMAIL "System.Net.Mail.SmtpClient"
 					SmtpClient smtp = new SmtpClient();
-					smtp.Host = "smtp.gmail.com";
+					smtp.Host = "smtp-mail.outlook.com";
 					smtp.Port = 587;
 					smtp.EnableSsl = false;
-					smtp.Credentials = new NetworkCredential("contato@seudominio.com.br", "suasenha");
+					smtp.Credentials = new NetworkCredential("misavpio@outlook.com.br", "MM64235M");
 					smtp.Send(mail);
+
+					Erro.Text = "Seu e-mail foi enviado com sucesso!!!";
 
 				}
 				catch (Exception ex)
 				{
 					Erro.Text = "Houve uma falha no envio do email <br>" + ex.Message;
+					//SALVA A EXCEÇÃO NO ARQUIVO DE LOG
+					App_Code.RecuperarExecao recuperar = new App_Code.RecuperarExecao();
+					recuperar.SalvarExcecao(ex);
+
 				}
 
 			}
@@ -77,5 +83,5 @@ namespace ProjetoWeb
 			SeuEmail.Text = "";
 			Mensagem.Text = "";
 		}
-	}
+	}	
 }

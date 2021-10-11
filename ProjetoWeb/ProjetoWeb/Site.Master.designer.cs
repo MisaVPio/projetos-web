@@ -60,6 +60,15 @@ namespace ProjetoWeb
 		protected global::System.Web.UI.WebControls.HyperLink Contato;
 
 		/// <summary>
+		/// Controle ExecutarPing.
+		/// </summary>
+		/// <remarks>
+		/// Campo gerado automaticamente.
+		/// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink ExecutarPing;
+
+		/// <summary>
 		/// Controle Conteudo.
 		/// </summary>
 		/// <remarks>

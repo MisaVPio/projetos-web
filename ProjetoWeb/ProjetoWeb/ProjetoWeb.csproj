@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\ExecutarPing.aspx" />
     <Content Include="Contato.aspx" />
+    <Content Include="excecoes.txt" />
     <Content Include="Images\aluno.png" />
     <Content Include="Images\banner0.png" />
     <Content Include="Images\banner1.png" />
@@ -97,6 +99,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ExecutarPing.aspx.cs">
+      <DependentUpon>ExecutarPing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExecutarPing.aspx.designer.cs">
+      <DependentUpon>ExecutarPing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\RecuperarExcecao.cs" />
     <Compile Include="Contato.aspx.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

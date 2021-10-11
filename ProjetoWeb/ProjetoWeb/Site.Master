@@ -33,6 +33,7 @@
 					<asp:HyperLink ID="Sobre" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
 					<asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
 					<asp:HyperLink ID="Contato" runat="server" NavigateUrl="~/Contato.aspx">CONTATO</asp:HyperLink>
+					<asp:HyperLink ID="ExecutarPing" runat="server" NavigateUrl="~/Admin/ExecutarPing.aspx">Ping</asp:HyperLink>
 				</div>
 			</div>
 			<br />

@@ -1,0 +1,6 @@
+Data: 11/10/2021 11:47:26
+Mensagem: Erro no processamento. A resposta do servidor foi: 5.7.3 STARTTLS is required to send mail [CP2PR80CA0138.lamprd80.prod.outlook.com]
+-------------
+Data: 11/10/2021 11:53:08
+Mensagem: Ocorreu uma exceção durante uma solicitação Ping.
+-------------

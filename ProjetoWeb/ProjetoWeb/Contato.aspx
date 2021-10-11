@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Conteudo" runat="server">
-	<div class="row">
+	<div class="row margin-top-60">
 		<!-- FORMULÁRIO DE ENTRADA DE DADOS -->
 		<div class="col-6">
 			<div class="box border">
